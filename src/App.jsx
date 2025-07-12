@@ -2,6 +2,7 @@
 import "./App.css";
 import UserCard from "./components/UserCard";
 import UserSkills from "./components/UserSkills";
+import QuoteFetcher from "./components/QuoteFetcher";
 function App() {
   const skills = [
     { skill: "React", level: "Advanced" },
@@ -14,6 +15,7 @@ function App() {
       {skills.map((s, index) => {
         return <UserSkills key={index} skill={s.skill} level={s.level} />;
       })}
+      <QuoteFetcher />
     </div>
   );
 }
