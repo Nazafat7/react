@@ -3,6 +3,7 @@ import "./App.css";
 import UserCard from "./components/UserCard";
 import UserSkills from "./components/UserSkills";
 import QuoteFetcher from "./components/QuoteFetcher";
+import ClickTracker from "./components/ClickTracker";
 function App() {
   const skills = [
     { skill: "React", level: "Advanced" },
@@ -16,6 +17,7 @@ function App() {
         return <UserSkills key={index} skill={s.skill} level={s.level} />;
       })}
       <QuoteFetcher />
+      <ClickTracker />
     </div>
   );
 }
